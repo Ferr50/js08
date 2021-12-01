@@ -11,7 +11,8 @@ var lap_winner_maria = 0;
 
 
 function race() {
-    document.getElementById("lap_winner").style.display = 'inline';
+    document.getElementById("lap_winner").style.display = 'flex';
+    document.getElementById("race_winner_box").style.display = 'flex';
     quantVoltas = document.querySelector('input[name="track"]:checked').value;
     lap_winner_pedro = 0;
     lap_winner_juca = 0;
@@ -36,7 +37,7 @@ function race() {
                     if(lap_winner_juca > lap_winner_maria){
                         document.getElementById("race_winner").innerHTML = 'Juca';
                     }else{
-                        document.getElementById("race_winner").innerHTML = 'Maria';
+                        document.getElementById("race_winner").innerHTML = 'Edna';
                     }
                 }
                 
@@ -52,7 +53,7 @@ function race() {
                 if(lap_winner_juca > lap_winner_maria){
                     document.getElementById("race_winner").innerHTML = 'Juca';
                 }else{
-                    document.getElementById("race_winner").innerHTML = 'Maria';
+                    document.getElementById("race_winner").innerHTML = 'Edna';
                 }
 
 
@@ -68,13 +69,13 @@ function race() {
                 }
 
                 if(lap_winner_maria > lap_winner_juca){
-                    document.getElementById("race_winner").innerHTML = 'Maria';
+                    document.getElementById("race_winner").innerHTML = 'Edna';
                 }else{
                     document.getElementById("race_winner").innerHTML = 'Juca';
                 }
 
             }else{
-                document.getElementById("race_winner").innerHTML = 'Maria';
+                document.getElementById("race_winner").innerHTML = 'Edna';
             }
          }else{
             document.getElementById("race_winner").innerHTML = 'Juca';

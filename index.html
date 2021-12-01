@@ -9,7 +9,7 @@
 </head>
 <body>
     
-<h1>Pedro Juca e Maria Vao correr, clique no botao para gerar as voltas</h1>
+<h1>Pedro Juca e Edna irão correr</h1>
 
 <form >
     <p>Escolha a Quantidade de Voltas:</p>
@@ -24,15 +24,23 @@
 <button onclick="race()">Correr</button>
 
 <div id="lap_winner">
-    <h2 id="pedro">Pedro</h2>
-    <span id="lap_pedro"></span>
+    <div class="box">
+        <h2 id="pedro">Pedro</h2>
+        <span id="lap_pedro"></span>
+    </div>
+    
+    <div class="box">
+        <h2 id="juca">Juca</h2>
+        <span id="lap_juca"></span>
+    </div>
 
-    <h2 id="pedro">Juca</h2>
-    <span id="lap_juca"></span>
+    <div class="box">
+        <h2 id="edna">Edna</h2>
+        <span id="lap_maria"></span>
+    </div>    
+</div>
 
-    <h2 id="pedro">Maria</h2>
-    <span id="lap_maria"></span>
-
+<div id="race_winner_box">
     <h2 id="racewinner">Race Winner</h2>
     <span id="race_winner"></span>
 </div>
